@@ -1,44 +1,22 @@
 <section>
 	<div class='service-wrap'>
-		<div class='service-banner'>
-			
+		<div class='service-banner'>	
 		</div>
-		<div class='container'>
-				<div class='row service-main'>
-						<div class='col-sm-6'>
-							<div class='row'>
-						    <div class='col-xs-3'>
-						    	<img ng-src="assets/images/{{mimage}}" class="img-responsive">
-						    </div>
-						    <div class='col-xs-9'> <h1>Members Benefits</h1>
-						    </div>
-              </div>
-					    <div class='row'>
-						    <div class='col-sm-12'>
-									<ul ng-repeat="member in members" class='service-ul'>
-										<li>{{member.benefit}}</li>
-								  </ul>
-								 </div>
-								</div> 
+		<div class='container '>
+			<div class='row service-main'>
+				<div class='col-sm-6'> 
+					<h1>Members Benefits</h1>
+					<ul ng-repeat="member in members" class='service-ul'>
+						<li>{{member.benefit}}</li>
+					</ul>
 				</div>
 				<div class='col-sm-6'>
-					<div class='row'>
-						<div class='col-xs-3'>
-							<img ng-src="assets/images/{{pimage}}" class="img-responsive">
-						</div>
-						<div class='col-xs-9'> <h1>Partners Benefits</h1>
-						</div>
-					</div>
-					<div class='row'>
-						<div class='col-sm-12'>
-							<ul ng-repeat="partner in partners" class='service-ul'>
-								<li>{{partner.reward}}</li>
-							</ul>
-						</div>
-					</div>
+					<h1>Partners Benefits</h1>
+					<ul ng-repeat="partner in partners" class='service-ul'>
+						<li>{{partner.reward}}</li>
+					</ul>
 				</div>
-				</div>
+			</div>
 		</div>
 	</div>
-	<div class='service-bottom'></div>
 </section>
