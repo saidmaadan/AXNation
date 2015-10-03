@@ -1,0 +1,101 @@
+<section>
+	<div class='main-carol'>
+			<carousel interval="myInterval">
+				<slide ng-repeat="slide in slides" active="slide.active">
+					<img ng-src="assets/images/{{slide.image}}" style="height: 500px" class="img-responsive" style="margin:auto;">
+					<div class="carousel-caption">
+					<div class='carousel-text-caption'>
+					<!-- <h3>{{slide.title}}</h3>
+					<p>{{slide.text}}</p> -->
+						</div>
+					</div>
+				</slide>
+			</carousel>
+		</div>
+
+		<div class='main-subheading'>
+			<h1>{{headline}}</h1>
+			<p>{{subheadline}}</p>
+			<a ui-sref='getinvolved'><span class='btn btn-success btn-lg'>{{involved}}</span></a>
+			 <img ng-src='assets/images/{{line_image}}' class='img-responsive'>
+		</div>
+		
+	<div class='main-story-body'>
+		<div class='container'>
+		<div class='main-story'>
+			<div class='row'>
+			<div class='col-md-8'>
+			 <div class='row'>
+			<div class='main-story-left'>
+				 <tabset Who we are="true">
+			<tab heading="Who we are ">
+				<div class='col-sm-5'><br>
+					<img ng-src="assets/images/users2.png" class='img-responsive'>
+				</div>
+				<div class='col-sm-7'>
+					 <p><br>We are a diverse collective of young black men and women focused on unifying and uplifting black communities across the diaspora. Motivated and mobilized by the recent--and continuing--spate of black deaths in the United States, the Xcons (members) of AXN all affirm that, after the demonstrations and protests occur, there must be some kind of organized and strategic effort to make change in the world. We know that, through historical, cultural, sociological, and cultural denigrations of black life, black people have lost their “alibis”--the stories that serve as markers for our identity. We, the members of AXN, respond by saying that it’s time to create new alibis--<!-- to take control of our stories and tell new ones. With that in mind, we have but one question: What’s Your Alibi?  --></p><a ui-sref="about">read more...</a>
+				</div>
+			</tab>
+			<tab heading="What we do ">
+			<div class='col-sm-5'> <br>
+					<img ng-src="assets/images/business.png" class='img-responsive'>
+			</div>
+				<div class='col-sm-7'><br>
+				<p>Our approach is simple: unify black people through collective economics, and uplift black people through community engagement. With regard to collective economics, AXN seeks to be a space for connecting black businesses, as well as providing resources for starting up new black businesses, changing the economic alibi of communities and people of color. With regard to community engagement, AXN works with schools, non-profit organizations, and other activist groups to impact our youth and develop legal and political strategies that will help uplift communities of color, thus changing the collective social and cultural alibis of communities and people of color.</p><a ui-sref="about">read more...</a> 
+				</div>
+	</tab>
+			<tab heading="Our Goal">
+				<div class='col-sm-5'><br>
+					<img ng-src="assets/images/goal.png" class='img-responsive'>
+				</div>
+				<div class='col-sm-7'><br>
+				<p> Our Goal is to become the Digital Black Wall Street. Black Wall Street was a black town in Greenwood, Oklahoma in the 1920s when racism was still a giant obstacle in the daily lives of blacks when pursuing their dreams. They used collective economics to build a neighborhood and community that thrived in the early 1900s up until it was bombed and burned down by the KKK along with government assistance. We want to recreate the 600+ black-owned businesses, churches, and schools that made up the community to seize control of our futures using innovative strategies and technological platforms such as websites, YouTube, and social media. <!-- We will be the Black TIE (Technology.Infrastructure.Economics) creating a New ERA (Economically. Rational. Agents) of colored people who reflect the boldness and leadership held by our brand’s inspirations; two legends whose names have been intertwined into ours, Muhammad ALI and Malcolm X. We will tie each generation together while also helping blacks once again look at each other as brothers and sisters as Ali did by(bi) X. -->
+				</p><a ui-sref="about">read more...</a>
+
+				</div>
+			</tab>
+			<tab heading="Why Should You Donate To AXN? ">
+				<div class='col-sm-5'><br>
+					<img ng-src="assets/images/dollar.png" class='img-responsive'>
+				</div>
+				<div class='col-sm-7'><br>
+					<p>You should donate to AXN because we have multiple initiatives--from mentoring and internship programs to programs to help start businesses--that are aimed at changing communities of color for the better. AXN’s entire goal is to change the alibis--to shift the stories--that have been told about men and women of color across the globe, and create our own stories. New Stories. Better Stories. Your donation, however large or small, will contribute to this goal, providing the much needed opportunities and exposure men and women of color need to effectively write their own alibis. And, trust and believe, we are absolutely grateful for any donations you might want to give!!! 
+						</p><a ui-sref="donate">read more...</a>
+				</div>
+			</tab>
+		</tabset>
+		</div>
+			</div>
+			</div>
+		
+			 <div class='col-md-4'>
+
+		 <a href = "https://www.youtube.com/channel/UCxpHF5PQxUzJ81YzkDaALNQ" target="_blank"><i class="fa fa-youtube fa-3x"></i></a>
+			
+		 <div> 
+			<youtube video="youtubeId" class="youtube"></youtube>
+		</div>
+		
+			 </div>
+		</div>
+		</div>
+		</div>
+		</div>
+
+		<div class='instagram-title'><h3> <a href = "https://instagram.com/thealibixstory" target="_blank"><i class="fa fa-instagram fa-4x"></i></a></h3></div>
+
+	<div class='main-instagram'>
+	<div class="container">
+			<div class="row">
+		<div class='col-md-12'>
+		<div class='main-instagram-img'>
+			<div class="col-sm-4 col-md-2" ng-repeat="p in pics | orderBy:recent | limitTo: 12">
+			 
+		<!-- <p><a href="http://instagram.com/{{p.user.username}}" target="_blank">{{p.user.username}}</a></p> -->
+		<p></p>
+		<a href="{{p.link}}" target="_blank"><img ng-src="{{p.images.thumbnail.url}}" class='img-responsive'/></a>
+		</div></div></div>
+
+	</div>
+	</div>
+</section>

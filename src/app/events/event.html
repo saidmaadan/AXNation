@@ -1,0 +1,28 @@
+<section><br>
+	<div class='events-content'>
+		<div class='events-top-main'>
+			<h1>Connect with us on social</h1>
+				<div class='hidden-xs'>
+			<a href='https://instagram.com/thealibixstory' target='_blank'><img ng-src='assets/images/{{instagram}}' class='img-responsive'></a>
+				<a href='https://www.youtube.com/channel/UCxpHF5PQxUzJ81YzkDaALNQ' target='_blank'><img ng-src='assets/images/{{youtube}}' class='img-responsive'></a>
+					<a href='https://twitter.com/theAlibiXstory' target='_blank'><img ng-src='assets/images/{{twitter}}' class='img-responsive'></a></div>
+		</div>
+	
+		<div class="container">
+			<div class="row">
+			 <div class='col-md-6' ng-repeat='video in ytubes' >
+				<youtube video='video.video' class="ytube" allowfullscreen></youtube>
+			 </div>
+			</div>
+
+			<div class="row">
+			  <div class='main-instagram-img'>
+				  <div class="col-sm-4 col-md-2" ng-repeat="p in pics | orderBy: recent">		 
+		          <p><!-- <a href="http://instagram.com/{{p.user.username}}" target="_blank">{{p.user.username}}</a> --></p>
+			        <a href="{{p.link}}" target="_blank"><img ng-src="{{p.images.thumbnail.url}}" class='img-responsive'/></a>
+		      </div>
+			  </div>
+			</div>
+	  </div>
+  </div>
+</section>

@@ -1,0 +1,153 @@
+<section>
+  <div class="contact-page">
+
+    <div class='contact-connect'>
+      <div class='container'>
+
+         
+          <div class='connect-us'>
+
+            <div class='row'>   
+              <div class='col-sm-6 hidden-xs pull-right'><br>    
+               <span><i class="fa fa-comments-o fa-2x"></i></span>
+                <h1>Get in touch and say hello!</h1>
+               <div class='connect-form'>
+                  <div class='connect-message'>
+                
+                     <h3>We are a non profit organization known to be relational..You can communicate with us througn email or contact form...We're here to listen, answer your questions or share our story.</h3>
+                 </div>
+                </div>
+                   
+              </div>
+               <div class='col-sm-6 hidden-xs '>
+           <div class="ng-scope">
+            <map id='map' center="29.7153854 N, 95.5102493 W" zoom="6">
+              <marker position="29.7153854 N, 95.5102493 W" on-click="toggleBounce()"  animation="DROP" draggable="true"></marker>
+            </map>
+          </div>
+         </div>
+           </div>
+        
+      </div>
+<div class="form-quote">
+	<div class='form-quote2'>
+		<div class='row'>
+		<div class="col-md-6 col-xs-12">
+         <div class="panel panel-danger">
+                <div class="panel-heading">
+                    <h2 class="panel-title">Inquiry form</h2>
+                </div>
+               
+			  <div ng-controller="ContactCtrl" class="panel-body">
+
+        <form ng-submit="submit(contactform)" name="contactform" method="post" action="" class="form-horizontal" role="form">
+                        <div class="form-group" ng-class="{ 'has-error': contactform.inputName.$invalid && submitted }">
+                            <label for="inputName" class="col-lg-2 control-label">Name</label>
+                            <div class="col-lg-10">
+                                <input ng-model="formData.inputName" type="text" class="form-control" id="inputName" name="inputName" placeholder="Your Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': contactform.inputEmail.$invalid && submitted }">
+                            <label for="inputEmail" class="col-lg-2 control-label">Email</label>
+                            <div class="col-lg-10">
+                                <input ng-model="formData.inputEmail" type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Your Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': contactform.inputSubject.$invalid && submitted }">
+                            <label for="inputSubject" class="col-lg-2 control-label">Subject</label>
+                            <div class="col-lg-10">
+                                <input ng-model="formData.inputSubject" type="text" class="form-control" id="inputSubject" name="inputSubject" placeholder="Subject" required>
+                            </div>
+                        </div>
+                        <div class="form-group" ng-class="{ 'has-error': contactform.inputMessage.$invalid && submitted }">
+                            <label for="inputMessage" class="col-lg-2 control-label">Message</label>
+                            <div class="col-lg-10">
+                                <textarea ng-model="formData.inputMessage" class="form-control" rows="4" id="inputMessage" name="inputMessage" placeholder="Your message..." required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-lg-offset-2 col-lg-10">
+                                <button type="submit" class="btn btn-default" ng-disabled="submitButtonDisabled">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                    <p ng-class="result" style="padding: 15px; margin: 0;">{{ resultMessage }}</p>
+			  <!--  <div class="alert alert-danger" ng-show="error">
+                    <button class="close" data-dismiss="alert">x</button>
+                    <strong>Error!</strong> An error occured while trying to send message.
+                  </div>
+			   <div class="alert alert-success" ng-show="success">
+											    <button class="close" data-dismiss="alert">x</button>
+											    <strong>Success! </strong> Your message was successfully sent. We'll get back to you as soon as possible!
+											  </div> -->
+                   
+                </div></div>
+    </div>
+    <div class='col-md-6'>
+    <div class='row'>
+      <div class='col-md-12 col-xs-12'>
+     
+         <div class='connect-message-head'>
+                  <h3>We'd love to hear from you</h3>
+                 <br>
+              </div></div>
+    
+   
+   <div class='col-md-12'>
+    <div class='row'>
+    <div class='col-md-6 col-xs-12'>
+     <div class='connect-form'>
+         <div class='connect-message'>
+     <br>
+      <div class='col-sm-12'>
+                  <h5>Want to know more about us?</h5>
+                  <span><a href='mailto:info@axnation.org'>info@axnation.org</a></span>
+              </div>
+              <div class='col-sm-12'>
+                  <h5>What to become AXNation Partner?</h5>
+                  <span><a href='mailto:partners@axnation.org'>partners@axnation.org</a></span>
+              </div>
+              <div class='col-sm-12'>
+                  <h5>Are you a journalist?</h5>
+                  <span><a href='mailto:media@axnation.org'>media@axnation.org</a></span>
+              </div>
+    
+              <div class='col-sm-12'>
+                  <h5>Just want to say hello?</h5>
+                  <span><a href='mailto:hello@axnation.org'>hello@axnation.org</a></span>
+              </div>
+ 
+    </div>
+    </div>
+     </div>
+
+    <div class="col-md-6 col-xs-12">
+    <div class='connect-info'>
+       <p>
+           Trusting us with your basic info means you're going to keep up with <kbd>AXNation</kbd> on how we're changing the world!
+       </p> 
+      <hr>
+      <span>
+          AXNation we protect your contact information. We don't sell your information and we don't send junk.
+      </span>
+      </div></div>
+
+
+      </div></div>
+      
+
+    </div></div>
+
+   
+
+
+
+  </div>
+  </div>
+</div>
+</div><br>
+
+</div>
+</section>
