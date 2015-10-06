@@ -5,7 +5,6 @@ angular.module('ngoApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', 'ng
 
      // pretty Angular URLs
     $locationProvider.html5Mode(true);
-
     $stateProvider
       .state('home', {
         url: '/',

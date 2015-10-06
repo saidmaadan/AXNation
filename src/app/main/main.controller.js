@@ -29,18 +29,29 @@ var app = angular.module('ngoApp');
   
     $scope.myInterval = 5000;
     $scope.slides = [
-      {'image' : 'caro.png'},
-      {'image' : 'caro-2.jpg'},
-      {'image' : 'caro1.jpg'},
-      {'image' : 'caro2.jpg'},
-      {'image' : 'caro4.jpg'},
-      {'image' : 'caro5.jpg'},
-      {'image' : 'caro7.jpg'},
-      {'image' : 'caro8.jpg'},
-      {'image' : 'd-img.jpg'},
-      {'image' : 'd-img1.jpg'},
-      {'image' : 'd-img2.jpg'},
-      {'image' : 'caro18.jpg'}
+      {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slide-c.jpg'},
+      {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider3.jpg'},
+      {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider5.jpg'},  
+      {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider9.jpg'},
+      {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider10.jpg'}
+      //{'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider11.jpg'},
+      // {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider2.jpg'},
+      //{'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider6.jpg'},
+      //{'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider7.jpg'},
+      //{'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider8.jpg'},
+      //{'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider4.jpg'},
+      //{'image' : 'caro.png'},
+      // {'image' : 'caro-2.jpg'},
+      // {'image' : 'caro1.jpg'},
+      // {'image' : 'caro2.jpg'},
+      // {'image' : 'caro4.jpg'},
+      // {'image' : 'caro5.jpg'},
+      // {'image' : 'caro7.jpg'},
+      // {'image' : 'caro8.jpg'},
+      // {'image' : 'd-img.jpg'},
+      // {'image' : 'd-img1.jpg'},
+      // {'image' : 'd-img2.jpg'},
+      // {'image' : 'caro18.jpg'}
 
     ];
 
