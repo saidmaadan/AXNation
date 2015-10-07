@@ -70,7 +70,7 @@ header img
   color #E8DADA
 
 .navbar-inverse .navbar-nav > li > a
-  font-weight bold
+  font-size 14px
   color #D5EBD6
 
 .navbar-inverse .navbar-brand span
@@ -90,10 +90,13 @@ header img
   border-color #0E7480
 
 .navbar-inverse .navbar-toggle:hover
-  background-color #0E7480
+  background-color #e84d3d
 
 .navbar-inverse .navbar-toggle:focus
   background-color #DE240B
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form
+    border-color: #005500;
 
 .nav > li
   position relative
@@ -166,15 +169,13 @@ section
 
 .main-subheading h1
   width 80%
-  font-family "open sans"
   font-weight 900
-  font-size 3.5em
+  font-size 3em
   color #1C7B4F
   margin auto
   text-transform uppercase
 
 .main-subheading p
-  font-family "open sans"
   font-size 1.8em
   font-weight 400
   color #1C7B4F
@@ -208,6 +209,15 @@ section
 .main-story-left img
   width 100%
   height 280px
+
+.main-story-left .jumbotron
+  height 300px
+  background url('https://s3.amazonaws.com/inventtive/axnation/slider6.jpg') no-repeat center center fixed
+  -webkit-background-size cover
+  -moz-background-size cover
+  -o-background-size cover
+  background-size cover
+
 
 .pay-button-main
   height 100%
@@ -281,8 +291,19 @@ section
   margin -20px 0 -50px 0
   background #ddd u
   color #414543
+  padding-bottom 30px
 
 .service-banner
+  width 100%
+  height 400px
+  background url('https://s3.amazonaws.com/inventtive/axnation/slider13.jpg') no-repeat center center fixed
+  -webkit-background-size cover
+  -moz-background-size cover
+  -o-background-size cover
+  background-size cover
+  margin-top -20px
+
+.service-banner-bottom
   width 100%
   height 300px
   background url('https://s3.amazonaws.com/inventtive/axnation/slider-we3.jpg') no-repeat center center fixed
@@ -290,7 +311,7 @@ section
   -moz-background-size cover
   -o-background-size cover
   background-size cover
-  margin-top -20px
+  margin-bottom -30px
 
 .service-main
   margin 30px 0
@@ -303,13 +324,9 @@ section
   color #1C7B4F
   font-weight 900
 
-.service-main ul li
-  list-style square
-  font-size 24px
-  font-weight 400
-
-.service-ul
-  margin 30px 0
+.service-table h1
+  font-size 30px
+  color #1c7b4f
 
 .service-bottom
   width 100%
@@ -336,7 +353,7 @@ section
   font-weight 400
 
 .contact-email .well
- background #cde5ca 
+  background #cde5ca 
 
 .contact-email a
   color #1c7b4f
@@ -542,6 +559,17 @@ footer
 
 .footer-connect .input-group
   margin-top 5px
+
+.digital-title span
+  font-size 18px
+  font-weight 900
+  color #666
+
+.digital-title a
+  color #1C7B4F
+
+.digital-title a:hover
+  color #8A810A
 
 form #inputName, #inputCompany, #inputEmail, #inputPhone, #inputUrl
   height 50px

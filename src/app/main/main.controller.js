@@ -30,10 +30,11 @@ var app = angular.module('ngoApp');
     $scope.myInterval = 5000;
     $scope.slides = [
       {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slide-c.jpg'},
-      {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider3.jpg'},
-      {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider5.jpg'},  
       {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider9.jpg'},
-      {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider10.jpg'}
+      {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider10.jpg'},
+      {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider3.jpg'},
+      {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider5.jpg'} 
+      
       //{'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider11.jpg'},
       // {'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider2.jpg'},
       //{'image' : 'https://s3.amazonaws.com/inventtive/axnation/slider6.jpg'},

@@ -1,25 +1,28 @@
 <section>
 	<article class='about-body'>
 		<div class='about-main'></div>
-			<div class='about-whoweare'>
-				<div class='container about'>
-					<div class='row'>
-						<div class='col-sm-10 col-sm-offset-1 users_image'>
-							<h1 class='text-center'>Who We Are</h1>
-							<p>{{whoweare}}</p>
-						</div>
+		<div class='about-whoweare'>
+			<div class='container about'>
+				<div class='row'>
+					<div class='col-sm-6'><br>
+						<img ng-src="https://s3.amazonaws.com/inventtive/axnation/d-img2.jpg" class='img-responsive' style="height: 350px;width:100%;">
+					</div>
+					<div class='col-sm-6 users_image'>
+						<h1 class='text-center'>Who We Are</h1>
+						<p>{{whoweare}}</p>
 					</div>
 				</div>
 			</div>
+		</div>
 
 		<div class='about-whatwedo'>
 			<div class='container about'>
 				<div class='row'>
-					<div class='col-sm-5 hidden-xs whatwedo'>
+					<!-- <div class='col-sm-5 hidden-xs whatwedo'>
 						<img ng-src="{{myimage}}" style="height: 300px" class="img-responsive" style="margin:auto;">
-					</div>
-					<div class='col-sm-7 col-xs-12 whatwedo'>
-						<h1>What We Do</h1>
+					</div> -->
+					<div class='col-sm-8 col-sm-offset-2 whatwedo'>
+						<h1 class='text-center'>What We Do</h1>
 						<p>{{whatwedo}}</p>
 					</div>
 				</div>
@@ -29,9 +32,12 @@
 		<div class='about-ourgoal'>
 			<div class='container about'>
 				<div class='row'>
-					<div class='col-sm-10 col-sm-offset-1'>
+					<div class='col-sm-6'>
 						<h1 class='text-center'>Our Goals</h1>
 						<p>{{ourgoal}}</p>
+					</div>
+					<div class='col-sm-6 hidden-xs whatwedo'>
+						<img ng-src="{{myimage}}" style="height: 350px;width:100%;margin-top:60px;" class="img-responsive" style="margin:auto;">
 					</div>
 				</div>
 			</div>
